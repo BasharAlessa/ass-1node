@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <!-- <a href="/about"> Go to About</a> -->
+    <!-- <h1> Hello from home page from islam</h1>
+
+    <ol>
+        <% users.forEach(users=> {%>
+        <li> <%= users.userName %></li>
+        <%}) %>
+    </ol> -->
+
+    <form action="/creatNewPost" method="post">
+        <input type="text" placeholder="title of the post" name="title">
+        <textarea name="desc" type="text" placeholder="write a post"></textarea>
+        <button>post</button>
+    </form>
+    <& for (let i=0 ; i<post.length ; i++){ %>
+        <div class="posts">
+            <h1><%= posts[i].title %></h1>
+            <p><%= posts[i].desc %></p>
+        </div>
+   <% } %>
+</body>
+</html>

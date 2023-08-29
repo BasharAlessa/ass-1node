@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body>
+    <a href="/"> Go to Home</a>
+    <h1>Hello from about page</h1>
+    <% if (userStatus === "admin"){ %>
+        <h3><%= title%> <button>Edit</button></h3>
+        <h5><%=  descripation %> <button>Edit</button></h5>
+    <% } else { %>
+        <h1>####### You need permision #######</h1>
+    <% } %>
+
+</body>
+</html>
