@@ -19,11 +19,11 @@
         <textarea name="desc" type="text" placeholder="write a post"></textarea>
         <button>post</button>
     </form>
-    <& for (let i=0 ; i<post.length ; i++){ %>
+    <% for (let i = 0; i < posts.length; i++) { %>
         <div class="posts">
             <h1><%= posts[i].title %></h1>
             <p><%= posts[i].desc %></p>
         </div>
-   <% } %>
+    <% } %>
 </body>
 </html>
